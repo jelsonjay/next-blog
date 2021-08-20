@@ -9,7 +9,11 @@ module.exports = {
     },
     extend: {
   colors:  {
-  primary: "#fbfefd",
+  primary: {
+    DEFAULT: "#fbfefd",
+    "200": "#E8E8FB",
+    "300": "#187743"
+  },
    green: {
     "50": "#10c102107",
     "100": "#f2fcf7",
@@ -32,7 +36,14 @@ module.exports = {
   plugin(function({addUtilities}){
   const utilities = {
     ".bg-hero": {
-    "background-image": "url(/bg.png)"
+    "background-image": "url(/bg.png)",
+    "background-size": "cover",
+    "background-position": "center",
+    "background-position": "no-repeat",
+     "background-position": "bottom",
+    "width": "100%",
+    "height": "100vh"
+    
     },
     ".shadow-skill": {
       "box-shadow": "0px 15px 30px rgba(0,0,0,0.1)"

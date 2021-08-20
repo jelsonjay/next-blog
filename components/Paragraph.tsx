@@ -1,7 +1,7 @@
 import React from "react";
 
 interface IAppProps {
-left:any;
+left?:any;
 }
 
 const Paragraph: React.FC<IAppProps> = ({left, children}) => {
